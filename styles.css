@@ -57,6 +57,12 @@ a {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 0.5rem;
   }
+
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
   
   .entry {
     margin-bottom: 1rem;
@@ -68,6 +74,11 @@ a {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+  .skill-title {
+    display: inline-block;
+    margin: 20px 0px;
+  }
+  
   
   .skills li {
     background-color: #1f1f1f;

@@ -134,6 +134,14 @@ body {
 
   main {
     margin-left: 400px;
+    border-radius: 1.5rem;
+    border: 1px solid #383838;
+    background: #1E1E1F;
+    display: flex;
+    padding: 2rem 3rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 0 0;
   }
   
   h3 {
@@ -172,10 +180,12 @@ body {
   }
   
   .experience-card {
-    background-color: #1c1c1c;
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #383838;
+    background: #262626;
   }
   .experiences div:nth-of-type(1) {
     margin-top: 0px !important;
@@ -225,6 +235,8 @@ body {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+    border: 1px solid #383838;
+    background: #262626;
   }
 
   .educations h4 {
@@ -256,6 +268,8 @@ body {
     display: flex;
     margin-bottom: 0.5rem;
     align-items: center;
+    border: 1px solid #383838;
+    background: #262626;
   }
 
   .certificates li img {
@@ -288,6 +302,8 @@ body {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+    border: 1px solid #383838;
+    background: #262626;
   }
 
   .skills .skills-card h4 {
@@ -321,6 +337,8 @@ body {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 2rem;
+    border: 1px solid #383838;
+    background: #262626;
   }
 
   .recommendation-card h4 {

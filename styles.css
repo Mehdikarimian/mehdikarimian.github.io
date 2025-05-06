@@ -177,12 +177,24 @@ body {
   }
   
   .experience-card h4 {
+    display: flex;
     color: #FFF;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0.5rem 0rem;
+  }
+
+  .experience-card strong {
+    margin-left: 5px;
+  }
+
+  .experience-card img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: 0px 8px 0px 0px;
   }
 
   .experience-card .date {
@@ -235,7 +247,7 @@ body {
 
   .certificates ul {
     margin: 0rem;
-    padding-left: 1.5rem;
+    padding: 0px;
   }
 
   .certificates li {  
@@ -262,6 +274,13 @@ body {
 
   .certificates li span {
     color: #FFF;
+  }
+
+  .certificates-card {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
   }
 
   .skills .skills-card {

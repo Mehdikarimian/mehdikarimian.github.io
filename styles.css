@@ -68,7 +68,7 @@ body {
 
   .sidebar .contact  {
     border-top: #404040 solid 2px;
-    padding: 1rem 0rem;
+    padding: 1rem 0.5rem;
   }
 
   .sidebar .contact .contact-card {
@@ -351,6 +351,8 @@ body {
       position: relative;
       margin-right: 0;
       margin-bottom: 2rem;
+      padding:  0.3rem;
+      margin: 0px;
     }
   
     main {

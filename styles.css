@@ -177,17 +177,12 @@ body {
   }
   
   .experience-card h4 {
-    display: flex;
     color: #FFF;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0.5rem 0rem;
-  }
-
-  .experience-card strong {
-    margin-left: 5px;
   }
 
   .experience-card img {

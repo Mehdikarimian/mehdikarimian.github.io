@@ -23,7 +23,8 @@ body {
   }
   
   .sidebar {
-    width: 25%;
+    width: 300px;
+    position: fixed;
     padding: 1rem;
     background-color: #1b1b1b;
     border-radius: 10px;
@@ -87,13 +88,14 @@ body {
     font-weight: 400;
     line-height: normal;
   }
-  .experiences img, .educations img, .certificates img {
+
+  .experiences img, .educations img, .certificates img, .skills img, .recommendations img  {
     margin: 0rem 0.6rem;
     margin-bottom: -3px;
   }
 
   main {
-    width: 75%;
+    margin-left: 350px;
   }
   
   h3 {
@@ -191,7 +193,22 @@ body {
   .certificates li span {
     color: #FFF;
   }
-  
+
+  .skills .skills-card {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .skills .skills-card h4 {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
   .skills div {
     margin-bottom: 1rem;
   }
@@ -202,15 +219,38 @@ body {
     margin: 0.2rem;
     display: inline-block;
     border-radius: 5px;
-    color: #fefefe;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   
   .recommendation-card {
     background: #1e1e1e;
     padding: 1rem;
     border-radius: 10px;
-    border-left: 4px solid #f4a261;
     margin-bottom: 2rem;
+  }
+
+  .recommendation-card h4 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .recommendation-card p {
+    overflow: hidden;
+    color: #A3A3A3;
+    text-overflow: ellipsis;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
   .linkedin a, .certificates a {

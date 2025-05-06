@@ -26,7 +26,6 @@ body {
     width: 350px;
     position: fixed;
     padding: 0rem;
-    background-color: #1b1b1b;
     border-radius: 10px;
     margin-right: 2rem;
     text-align: center;
@@ -34,6 +33,9 @@ body {
 
   .sidebar .fixed {
     padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid #383838;
+    background: #1E1E1F;
   }
   
   .profile-pic {
@@ -126,10 +128,18 @@ body {
   .experiences h3, .educations h3, .certificates h3, .skills h3, .recommendations h3  {
     display: flex;
     margin: 1.5rem 0rem;
+    align-items: center;
   }
 
-  .experiences img, .educations img, .certificates img, .skills img, .recommendations img  {
-    margin: 0rem 0.6rem;
+  .experiences .icon-wrapper, .educations .icon-wrapper, .certificates .icon-wrapper, .skills .icon-wrapper, .recommendations .icon-wrapper  {
+    border-radius: 0.5rem;
+    border: 1px solid #383838;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.625rem;
+    background: #262626;
+    margin-right: 0.5rem;
   }
 
   main {
@@ -140,7 +150,6 @@ body {
     display: flex;
     padding: 2rem 3rem;
     flex-direction: column;
-    gap: 1.5rem;
     flex: 1 0 0;
   }
   
@@ -313,10 +322,6 @@ body {
     font-weight: 600;
     line-height: normal;
   }
-
-  .skills div {
-    margin-bottom: 1rem;
-  }
   
   .skills span {
     background: #333;
@@ -336,7 +341,7 @@ body {
     background: #1e1e1e;
     padding: 1rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border: 1px solid #383838;
     background: #262626;
   }
@@ -387,8 +392,8 @@ body {
       width: 100%;
       position: relative;
       margin-right: 0;
-      margin-bottom: 2rem;
       margin: 0px;
+      margin-bottom: 1rem;
     }
   
     main {

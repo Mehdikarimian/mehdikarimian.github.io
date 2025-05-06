@@ -23,7 +23,7 @@ body {
   }
   
   .sidebar {
-    width: 300px;
+    width: 250px;
     position: fixed;
     padding: 1rem;
     background-color: #1b1b1b;
@@ -47,6 +47,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin: 0.5rem;
   }
   
   .sidebar h2 {
@@ -62,40 +63,72 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
-  
-  .sidebar .about, .sidebar .contact {
-    padding: 1rem;;
-    text-align: left;
+    margin-bottom: 2rem;
   }
 
-  .sidebar .about h3, .sidebar .contact h3 {
+  .sidebar .contact  {
+    border-top: #404040 solid 2px;
+    padding: 1rem 0rem;
+  }
+
+  .sidebar .contact .contact-card {
+    display: flex;
+    margin: 0.5rem 0rem;
+  }
+
+  .sidebar .contact .contact-card .img-wrapper {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #383838;
+    background: #262626;
+  }
+
+  .sidebar .contact .contact-card img {
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+  }
+
+  .sidebar .contact .contact-card a {
+    font-weight: normal;
+  }
+
+  .sidebar .contact .contact-card .contact-wrapper {
+    flex:2;
+    text-align: left;
+    padding: 0rem 0.5rem;
+  }
+
+  .sidebar .contact p {
     color: #FFF;
-    font-family: Poppins;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    margin: 0rem 0.5rem 0.5rem 0rem;
-    text-align: left;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px
   }
 
-  .sidebar .about p, .sidebar .contact p, .sidebar .contact a, .sidebar .contact span {
+  .sidebar .contact span {
     color: #A3A3A3;
-    font-family: Poppins;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
 
+  .experiences h3, .educations h3, .certificates h3, .skills h3, .recommendations h3  {
+    display: flex;
+  }
+
   .experiences img, .educations img, .certificates img, .skills img, .recommendations img  {
     margin: 0rem 0.6rem;
-    margin-bottom: -3px;
   }
 
   main {
-    margin-left: 350px;
+    margin-left: 300px;
   }
   
   h3 {
@@ -104,6 +137,31 @@ body {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+  }
+
+  .summary {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .summary h3 {
+    color: #FFF;
+    margin-bottom: 0px;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.5rem;
+  }
+
+  .summary p {
+    color: #A3A3A3;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
   }
   
@@ -181,8 +239,19 @@ body {
 
   .certificates li {  
     list-style: none;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
+    display: flex;
+    margin-bottom: 0.5rem;
   }
+
+  .certificates li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px 8px 0px 0px;
+  }
+
   .certificates li a {
     color: #A3A3A3;
     font-style: normal;
@@ -241,6 +310,18 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .recommendation-card a {
+    display: flex;
+  }
+
+  .recommendation-card img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px 8px 0px 0px;
   }
 
   .recommendation-card p {

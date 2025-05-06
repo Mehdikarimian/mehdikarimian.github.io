@@ -395,9 +395,13 @@ body {
       margin: 0px;
       margin-bottom: 1rem;
     }
+    .sidebar .fixed {
+      padding: 1.25rem;
+    }
   
     main {
       margin-left: 0;
+      padding: 1.25rem;
     }
   
     .summary {

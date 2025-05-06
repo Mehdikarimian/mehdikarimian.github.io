@@ -1,109 +1,219 @@
-/* Reset and base styles */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Poppins, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 0.95rem;
   }
-a {
+
+  a {
     color: #ffffff;
     text-decoration: none;
     text-style: none;
-}
-  
-  body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-  }
+    font-weight: bold;
+    }
   
   .container {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
     padding: 2rem;
   }
   
-  header {
+  .sidebar {
+    width: 25%;
+    padding: 1rem;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    margin-right: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
   }
   
   .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ffffff;
     margin-bottom: 1rem;
   }
   
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  h2 {
+  .sidebar h1 {
+    color: #FFF;
+    font-family: Poppins;
     font-size: 1.5rem;
-    color: #bbbbbb;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
   
-  section {
-    margin-bottom: 2rem;
+  .sidebar h2 {
+    display: flex;
+    padding: 0.375rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #2A2A2A;
+    color: #A3A3A3;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .sidebar .about, .sidebar .contact {
+    padding: 1rem;;
+    text-align: left;
+  }
+
+  .sidebar .about h3, .sidebar .contact h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: 0rem 0.5rem 0.5rem 0rem;
+    text-align: left;
+  }
+
+  .sidebar .about p, .sidebar .contact p, .sidebar .contact a, .sidebar .contact span {
+    color: #A3A3A3;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .experiences img, .educations img, .certificates img {
+    margin: 0rem 0.6rem;
+    margin-bottom: -3px;
+  }
+
+  main {
+    width: 75%;
   }
   
   h3 {
-    font-size: 1.8rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .experience-card {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 0.5rem;
+  }
+  .experiences div:nth-of-type(1) {
+    margin-top: 0px !important;
+  }
+  
+  .experience-card h4 {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0.5rem 0rem;
   }
 
-  h4 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+  .experience-card .date {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #FFD86E 0%, #FFBC5E 15.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
-  .entry {
+  .experience-card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  .experience-card ul li {
+    color: #A3A3A3;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .educations .educations-card {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .educations h4 {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0.5rem 0rem;
+  }
+
+  .educations p {
+    color: #A3A3A3;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .certificates ul {
+    margin: 0rem;
+    padding-left: 1.5rem;
+  }
+
+  .certificates li {  
+    list-style: none;
+    line-height: 1.7rem;
+  }
+  .certificates li a {
+    color: #A3A3A3;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+
+  .certificates li span {
+    color: #FFF;
+  }
+  
+  .skills div {
     margin-bottom: 1rem;
   }
   
-  .skills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .skill-title {
+  .skills span {
+    background: #333;
+    padding: 0.3rem 0.6rem;
+    margin: 0.2rem;
     display: inline-block;
-    margin: 20px 0px;
+    border-radius: 5px;
+    color: #fefefe;
   }
   
-  
-  .skills li {
-    background-color: #1f1f1f;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+  .recommendation-card {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #f4a261;
+    margin-bottom: 2rem;
+  }
+
+  .linkedin a, .certificates a {
+    font-weight: normal;
   }
   
-  blockquote {
-    font-style: italic;
-    border-left: 4px solid #ffffff;
-    padding-left: 1rem;
-    color: #cccccc;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-  
-  footer a {
-    color: #1e90ff;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }

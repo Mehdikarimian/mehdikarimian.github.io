@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="majesticons:book-open-line">
+<path id="Vector" d="M12 6.60301C13.667 5.33201 17.5 3.74301 21 6.60301V19C17.5 16.14 13.667 17.729 12 19M12 6.60301C10.333 5.33201 6.5 3.74301 3 6.60301V19C6.5 16.14 10.333 17.729 12 19M12 6.60301V19" stroke="url(#paint0_linear_1_65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_65" x1="3" y1="12.0001" x2="21" y2="12.0001" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD86E"/>
+<stop offset="1" stop-color="#FFBC5E"/>
+</linearGradient>
+</defs>
+</svg>

@@ -33,7 +33,7 @@ body {
   }
 
   .sidebar .fixed {
-    padding: 1rem;
+    padding: 2.5rem;
   }
   
   .profile-pic {
@@ -63,7 +63,7 @@ body {
     border-radius: 0.5rem;
     background: #2A2A2A;
     color: #A3A3A3;
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -125,6 +125,7 @@ body {
 
   .experiences h3, .educations h3, .certificates h3, .skills h3, .recommendations h3  {
     display: flex;
+    margin: 1.5rem 0rem;
   }
 
   .experiences img, .educations img, .certificates img, .skills img, .recommendations img  {
@@ -172,9 +173,9 @@ body {
   
   .experience-card {
     background-color: #1c1c1c;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .experiences div:nth-of-type(1) {
     margin-top: 0px !important;
@@ -254,13 +255,13 @@ body {
     line-height: 1.5rem;
     display: flex;
     margin-bottom: 0.5rem;
+    align-items: center;
   }
 
   .certificates li img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 2rem;
+    height: 1.5rem;
+    object-fit: contain;
     margin: 0px 8px 0px 0px;
   }
 

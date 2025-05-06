@@ -23,7 +23,7 @@ body {
   }
   
   .sidebar {
-    width: 300px;
+    width: 350px;
     position: fixed;
     padding: 0rem;
     background-color: #1b1b1b;
@@ -133,7 +133,7 @@ body {
   }
 
   main {
-    margin-left: 350px;
+    margin-left: 400px;
   }
   
   h3 {
